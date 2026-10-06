@@ -1,0 +1,14 @@
+website:
+  sidebar:
+    contents:
+      - text: "Overview"
+        href: index.ipynb
+      - text: "Report"
+        href: 03_report.ipynb
+      - section: "Analysis"
+        contents:
+          - 01_eda.ipynb
+          - 02_pls.ipynb
+      - section: "API reference"
+        contents:
+          - 00_data.ipynb

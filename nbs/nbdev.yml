@@ -1,0 +1,14 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "cassava"
+  site-url: "https://franckalbinet.github.io/cassava"
+  description: "Predict δ13C in cassava leaves from mid-infrared spectra."
+  repo-branch: main
+  repo-url: "https://github.com/franckalbinet/cassava"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown

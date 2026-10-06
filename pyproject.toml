@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cassava"
+dynamic = ["version"]
+description = "Predict δ13C in cassava leaves from mid-infrared spectra."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "Apache-2.0"
+authors = [{name = "Franck Albinet", email = "franckalbinet@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "soilspectfm>=0.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "nbdev>=3.3.25",
+]
+
+[project.urls]
+Repository = "https://github.com/franckalbinet/cassava"
+Documentation = "https://franckalbinet.github.io/cassava/"
+
+[project.entry-points.nbdev]
+cassava = "cassava._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "cassava.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["cassava"]
+
+[tool.nbdev]
+custom_sidebar = true
